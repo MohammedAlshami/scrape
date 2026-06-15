@@ -1,0 +1,15 @@
+/*
+!/scrape
+!/tools
+!/.gitignore
+!/README.md
+!/requirements.txt
+
+# Keep data folders empty in git
+**/_metadata.json
+**/_progress.json
+**/*.db
+**/__pycache__
+**/*.pyc
+*.pyc
+__pycache__/
