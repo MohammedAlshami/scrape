@@ -4,12 +4,13 @@ Fetch Malaysia inflation data from DOSM Open Data API and save as static JSON.
 Run: python scrape/dosm_data.py
 """
 
-import json
+import json, csv
 import requests
 import os
 
 API_URL = "https://api.data.gov.my/data-catalogue?id=cpi_annual_inflation"
-OUTPUT = os.path.join(os.path.dirname(__file__), "..", "frontend", "public", "data", "inflation.json")
+OUTPUT_JSON = os.path.join(os.path.dirname(__file__), "..", "frontend", "public", "data", "inflation.json")
+OUTPUT_CSV = os.path.join(os.path.dirname(__file__), "..", "data", "dosm", "inflation", "inflation.csv")
 
 ELECTION_TERMS = [
     {"id": "ge10", "label": "GE10", "years": [1999, 2000, 2001, 2002, 2003], "period": "1999 \u2013 2003"},
@@ -42,11 +43,18 @@ def fetch():
 
     out = {"data": all_data, "terms": ELECTION_TERMS}
 
-    os.makedirs(os.path.dirname(OUTPUT), exist_ok=True)
-    with open(OUTPUT, "w") as f:
+    os.makedirs(os.path.dirname(OUTPUT_JSON), exist_ok=True)
+    with open(OUTPUT_JSON, "w") as f:
         json.dump(out, f, indent=2)
+    print(f"Saved {len(all_data)} years to {OUTPUT_JSON}")
 
-    print(f"Saved {len(all_data)} years of inflation data to {OUTPUT}")
+    os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
+    with open(OUTPUT_CSV, "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["date", "division", "inflation"])
+        for entry in raw:
+            w.writerow([entry["date"], entry["division"], entry["inflation"]])
+    print(f"Saved {len(raw)} rows to {OUTPUT_CSV}")
     return out
 
 

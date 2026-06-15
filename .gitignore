@@ -5,6 +5,7 @@
 !/README.md
 !/requirements.txt
 !/frontend
+!/data
 
 # Keep data folders empty in git
 **/_metadata.json
@@ -18,3 +19,4 @@ __pycache__/
 # frontend
 /frontend/node_modules/
 /frontend/.next/
+/frontend/.env.local
