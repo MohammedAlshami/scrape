@@ -1,0 +1,183 @@
+{
+  "data": [
+    {
+      "year": 1999,
+      "inflation": 2.9
+    },
+    {
+      "year": 2000,
+      "inflation": 1.7
+    },
+    {
+      "year": 2001,
+      "inflation": 1.4
+    },
+    {
+      "year": 2002,
+      "inflation": 1.8
+    },
+    {
+      "year": 2003,
+      "inflation": 1.1
+    },
+    {
+      "year": 2004,
+      "inflation": 1.4
+    },
+    {
+      "year": 2005,
+      "inflation": 3.0
+    },
+    {
+      "year": 2006,
+      "inflation": 3.6
+    },
+    {
+      "year": 2007,
+      "inflation": 2.0
+    },
+    {
+      "year": 2008,
+      "inflation": 5.4
+    },
+    {
+      "year": 2009,
+      "inflation": 0.6
+    },
+    {
+      "year": 2010,
+      "inflation": 1.6
+    },
+    {
+      "year": 2011,
+      "inflation": 3.2
+    },
+    {
+      "year": 2012,
+      "inflation": 1.7
+    },
+    {
+      "year": 2013,
+      "inflation": 2.1
+    },
+    {
+      "year": 2014,
+      "inflation": 3.1
+    },
+    {
+      "year": 2015,
+      "inflation": 2.1
+    },
+    {
+      "year": 2016,
+      "inflation": 2.1
+    },
+    {
+      "year": 2017,
+      "inflation": 3.8
+    },
+    {
+      "year": 2018,
+      "inflation": 1.0
+    },
+    {
+      "year": 2019,
+      "inflation": 0.7
+    },
+    {
+      "year": 2020,
+      "inflation": -1.1
+    },
+    {
+      "year": 2021,
+      "inflation": 2.5
+    },
+    {
+      "year": 2022,
+      "inflation": 3.4
+    },
+    {
+      "year": 2023,
+      "inflation": 2.5
+    },
+    {
+      "year": 2024,
+      "inflation": 1.8
+    },
+    {
+      "year": 2025,
+      "inflation": 1.4
+    }
+  ],
+  "terms": [
+    {
+      "id": "ge10",
+      "label": "GE10",
+      "years": [
+        1999,
+        2000,
+        2001,
+        2002,
+        2003
+      ],
+      "period": "1999 \u2013 2003"
+    },
+    {
+      "id": "ge11",
+      "label": "GE11",
+      "years": [
+        2004,
+        2005,
+        2006,
+        2007
+      ],
+      "period": "2004 \u2013 2007"
+    },
+    {
+      "id": "ge12",
+      "label": "GE12",
+      "years": [
+        2008,
+        2009,
+        2010,
+        2011,
+        2012
+      ],
+      "period": "2008 \u2013 2012"
+    },
+    {
+      "id": "ge13",
+      "label": "GE13",
+      "years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "period": "2013 \u2013 2017"
+    },
+    {
+      "id": "ge14",
+      "label": "GE14",
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "period": "2018 \u2013 2021"
+    },
+    {
+      "id": "ge15",
+      "label": "GE15",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "period": "2022 \u2013 present"
+    }
+  ]
+}
